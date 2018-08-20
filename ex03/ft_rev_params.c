@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_rev_params.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/15 15:24:21 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/20 16:08:47 by dabeloos         ###   ########.fr       */
+/*   Created: 2018/08/20 13:53:21 by dabeloos          #+#    #+#             */
+/*   Updated: 2018/08/20 14:09:13 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
-{
-	int i;
-	int cmp;
+void	ft_putchar(char c);
 
-	i = 0;
-	cmp = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && cmp == 0)
+int		main(int argc, char *argv[])
+{
+	int	i;
+	int	j;
+
+	if (argc > 1)
 	{
-		cmp = s1[i] - s2[i];
-		i++;
+		i = argc;
+		while (--i > 0)
+		{
+			j = 0;
+			while (argv[i][j] != '\0')
+			{
+				ft_putchar(argv[i][j]);
+				j++;
+			}
+			ft_putchar('\n');
+		}
 	}
-	return ((cmp == 0) ? s1[i] - s2[i] : cmp);
+	return (0);
 }
