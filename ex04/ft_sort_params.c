@@ -6,7 +6,7 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/20 14:09:41 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/20 16:10:01 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/20 18:13:54 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int		main(int argc, char *argv[])
 	if (argc > 1)
 	{
 		ft_sort_array_strings(argc, argv);
-		i = 0;
+		i = 1;
 		while (i < argc)
 		{
 			j = 0;
